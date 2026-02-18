@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TREE(3) – First 20 Valid Example Trees</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+
+      h1, h2 {
+        line-height: 1.2;
+      }
+
+      .card {
+        border: 1px solid #8884;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      code {
+        font-size: 0.95rem;
+      }
+
+      ol {
+        columns: 2;
+        column-gap: 2rem;
+      }
+
+      li {
+        break-inside: avoid;
+        margin-bottom: 0.35rem;
+      }
+
+      pre {
+        background: #8882;
+        border-radius: 8px;
+        padding: 0.75rem;
+        overflow-x: auto;
+      }
+
+      @media (max-width: 700px) {
+        ol {
+          columns: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>TREE(3): 20 Example Valid Trees</h1>
+      <p>
+        This page provides a <strong>small educational sample</strong> of valid trees used in
+        <code>TREE(3)</code>. It does not attempt to list all valid trees.
+      </p>
+
+      <section class="card">
+        <h2>Notation</h2>
+        <ul>
+          <li><code>a</code> = single-node tree with root label <code>a</code></li>
+          <li><code>a(x)</code> = root <code>a</code> with one child subtree <code>x</code></li>
+          <li><code>a(x,y)</code> = root <code>a</code> with two child subtrees <code>x</code> and <code>y</code></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>First 20 sample trees</h2>
+        <ol>
+          <li><code>2</code></li>
+          <li><code>1</code></li>
+          <li><code>0</code></li>
+          <li><code>2(2)</code></li>
+          <li><code>2(1)</code></li>
+          <li><code>2(0)</code></li>
+          <li><code>1(2)</code></li>
+          <li><code>1(1)</code></li>
+          <li><code>1(0)</code></li>
+          <li><code>0(2)</code></li>
+          <li><code>0(1)</code></li>
+          <li><code>0(0)</code></li>
+          <li><code>2(2,2)</code></li>
+          <li><code>2(2,1)</code></li>
+          <li><code>2(2,0)</code></li>
+          <li><code>2(1,1)</code></li>
+          <li><code>2(1,0)</code></li>
+          <li><code>2(0,0)</code></li>
+          <li><code>1(2,2)</code></li>
+          <li><code>1(2,1)</code></li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>Small shape sketches</h2>
+        <p><code>2</code></p>
+        <pre>2</pre>
+
+        <p><code>2(1)</code></p>
+        <pre>2
+└─1</pre>
+
+        <p><code>2(2,1)</code></p>
+        <pre>2
+├─2
+└─1</pre>
+      </section>
+    </main>
+  </body>
+</html>
