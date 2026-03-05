@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dunes of the Zagros - Browser RTS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Dunes of the Zagros</h1>
+      <p class="tag">A lightweight RTS inspired by classic base-and-squad warfare.</p>
+
+      <section>
+        <h2>Scenario Lore</h2>
+        <p>
+          In a distant future where desert storms swallow satellites and memory alike, the
+          fractured basin of <strong>Iranya</strong> sits atop shimmering <em>Aether Brine</em>—a
+          psycho-reactive fuel that powers shields, fleets, and propaganda.
+        </p>
+        <p>
+          The <strong>Union of Atlantic States (UAS)</strong> enters Iranya under the banner of
+          “stability logistics.” Its loud, theatrical Chancellor, <strong>Magnus Vhal</strong>,
+          promises "victory so massive the dunes themselves will applaud" from gilded
+          command balconies.
+        </p>
+        <p>
+          Opposing them, the <strong>Coalition of the Crescent Steppe</strong> blends militia,
+          engineers, and nomad houses to resist occupation while competing for control of
+          sacred wind-cities. Every convoy, refinery, and speech reshapes the war.
+        </p>
+      </section>
+
+      <section>
+        <h2>How to Play</h2>
+        <ul>
+          <li>Left click: select friendly unit.</li>
+          <li>Right click: move selected unit.</li>
+          <li><kbd>T</kbd>: train an infantry unit at your Citadel (cost 50).</li>
+          <li><kbd>Y</kbd>: train a skimmer tank (cost 120).</li>
+          <li><kbd>R</kbd>: build a brine refinery near your Citadel (cost 150).</li>
+          <li>Destroy the enemy Citadel to win.</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="game-panel">
+      <div class="hud">
+        <div id="resource"></div>
+        <div id="status">Status: Hold the line.</div>
+      </div>
+      <canvas id="game" width="960" height="640"></canvas>
+    </main>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
